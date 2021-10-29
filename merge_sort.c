@@ -10,10 +10,10 @@ void merge(int arr[],int l, int mid, int u)
 
 	for(i=0;i<n1;i++)
 	L[i]=arr[l+i];
-	for(i=0;i<n2;i++)
-	R[i]=arr[mid+1+i];
+	for(j=0;j<n2;j++)
+	R[j]=arr[mid+1+j];
 	
-	i=0;j=0;k=0;
+	i=0;j=0;k=l;
 
 	while(i<n1 && j< n2){
 		if(L[i]<=R[j]){

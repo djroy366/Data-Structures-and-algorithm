@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+struct node *head=NULL;
+
+
 struct node{
 	int data;
 	struct node* next;
 	};
 
-struct node* head;
+/*struct node* head;*/
 
 struct node* insert(struct node* head,int data)
 {
@@ -35,7 +38,7 @@ void print(struct node* head)
 
 int main()
 {
-	head=NULL;
+	
 	printf("What is happening!!!!!!\n");
 	head=insert(head,1);
 	head=insert(head,2);
